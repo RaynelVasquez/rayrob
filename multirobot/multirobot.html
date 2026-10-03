@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../multimedia/icon.png">
+    <title>RayRob | Sistema Coordinado Multi-Robot (ROS 2)</title>
+    <meta name="description" content="Detalles técnicos, simulación en RViz, interfaz gráfica y videos de funcionamiento del sistema multi-robot con ROS 2 y ESP32.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="brand">
+            <img src="../multimedia/logo.png" alt="Logo RayRob" class="brand-logo">
+            <span class="brand-name">Ray<span class="highlight">Rob</span></span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../projects.html" class="active">Proyectos</a></li>
+                <li><a href="../contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Detalle del Proyecto -->
+        <section class="project-detail-section">
+            <div class="project-detail-container">
+                
+                <!-- Botón de retorno -->
+                <div class="back-navigation">
+                    <a href="../projects.html" class="btn-back">← Volver a proyectos</a>
+                </div>
+
+                <div class="project-header-info">
+                    <span class="project-tag">Sistemas Autónomos & ROS 2</span>
+                    <h1>Sistema Coordinado Multi-Robot (ROS 2 & ESP32)</h1>
+                    <p class="project-lead">Control y visualización avanzada de múltiples robots móviles diferenciales y manipuladores cilíndricos integrados mediante micro-ROS, visión cenital con AprilTags y árboles de comportamiento.</p>
+                </div>
+
+                <!-- Galería de Medios (Imágenes y Videos) -->
+                <div class="media-gallery">
+                    
+                    <!-- Robots Físicos -->
+                    <div class="media-card">
+                        <img src="robots_multiple.jpeg" alt="Robots físicos armados">
+                        <p class="media-caption">Robots móviles diferenciales y brazos cilíndricos ensamblados</p>
+                    </div>
+
+                    <!-- Interfaz Gráfica -->
+                    <div class="media-card">
+                        <img src="INTERFAZ.jpg" alt="Interfaz Gráfica en Python">
+                        <p class="media-caption">Interfaz de control y selección de robots/objetos</p>
+                    </div>
+
+                    <!-- Simulación RViz -->
+                    <div class="media-card">
+                        <img src="SIMULACION.jpg" alt="Simulación en RViz">
+                        <p class="media-caption">Visualización de estados, frames y trayectorias en RViz</p>
+                    </div>
+
+                    <!-- Video de funcionamiento general 1 -->
+                    <div class="media-card">
+                        <video controls preload="metadata">
+                            <source src="funcionamiento_robot1.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                        <p class="media-caption">Prueba de funcionamiento y desplazamiento del Robot 1</p>
+                    </div>
+
+                    <!-- Video de funcionamiento general 2 -->
+                    <div class="media-card">
+                        <video controls preload="metadata">
+                            <source src="funcionamiento_robot2.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                        <p class="media-caption">Prueba de funcionamiento y manipulación del Robot 2</p>
+                    </div>
+
+                    <!-- Video de interfaz en acción -->
+                    <div class="media-card">
+                        <video controls preload="metadata">
+                            <source src="funcionamiento_interfaz_robot.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                        <p class="media-caption">Demostración del flujo con la interfaz gráfica</p>
+                    </div>
+
+                </div>
+
+                <!-- Descripción detallada de ingeniería -->
+                <div class="project-specs">
+                    <h3>Arquitectura y Especificaciones Técnicas</h3>
+                    <ul>
+                        <li><strong>Hardware Integrado:</strong> 2 robots móviles diferenciales y 2 robots manipuladores cilíndricos (3 grados de libertad con electroimán para agarre). Sistema controlado por 4 microcontroladores ESP32 (2 por cada robot).</li>
+                        <li><strong>Comunicación en Tiempo Real:</strong> Conexión puenteada mediante <strong>micro-ROS Agent</strong> hacia una computadora central (procesador i7) ejecutando ROS 2 Humble sobre Ubuntu 22.04.</li>
+                        <li><strong>Visión Artificial y Localización:</strong> Uso de cámara superior y detección de <strong>AprilTags</strong> para el posicionamiento preciso en 2D de robots, cubos, depósitos y puntos de interés del entorno.</li>
+                        <li><strong>Lógica y Monitoreo:</strong> Coordinación de tareas autónomas mediante Árboles de Comportamiento (Behavior Trees) e interfaz gráfica desarrollada a medida en Python para el envío de comandos y monitoreo en vivo.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 RayRob · Asesoría de Proyectos de Robótica</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../multimedia/icon.png">
+    <title>RayRob | Robot WALLE Recolector y Clasificador</title>
+    <meta name="description" content="Detalles del diseño mecánico 3D, circuitería, visión artificial con Haar Cascade y videos de funcionamiento del robot WALLE.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="brand">
+            <img src="../multimedia/logo.png" alt="Logo RayRob" class="brand-logo">
+            <span class="brand-name">Ray<span class="highlight">Rob</span></span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../projects.html" class="active">Proyectos</a></li>
+                <li><a href="../contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Detalle del Proyecto -->
+        <section class="project-detail-section">
+            <div class="project-detail-container">
+                
+                <!-- Botón de retorno -->
+                <div class="back-navigation">
+                    <a href="../projects.html" class="btn-back">← Volver a proyectos</a>
+                </div>
+
+                <div class="project-header-info">
+                    <span class="project-tag">Robótica Móvil & Visión Artificial</span>
+                    <h1>Robot WALLE: Recolector y Clasificador Autónoma de Residuos</h1>
+                    <p class="project-lead">Desarrollo completo desde cero (diseño CAD, electrónica y programación) de un robot móvil multi-tarea inspirado en WALLE, equipado con clasificación de materiales por visión artificial e inteligencia distribuida.</p>
+                </div>
+
+                <!-- Galería de Medios (Imágenes y Videos) -->
+                <div class="media-gallery">
+                    
+                    <!-- Imagen 1 -->
+                    <div class="media-card">
+                        <img src="1_robot.jpeg" alt="Robot WALLE vista frontal">
+                        <p class="media-caption">Prototipo final ensamblado (Vista frontal)</p>
+                    </div>
+
+                    <!-- Imagen 2 -->
+                    <div class="media-card">
+                        <img src="2_robot.jpeg" alt="Robot WALLE en operación">
+                        <p class="media-caption">Estructura mecánica y sistema de tracción</p>
+                    </div>
+
+                    <!-- Imagen 3 -->
+                    <div class="media-card">
+                        <img src="3_robot.jpeg" alt="Detalle de componentes WALLE">
+                        <p class="media-caption">Distribución de componentes y diseño estético</p>
+                    </div>
+
+                    <!-- Desarmado 1 -->
+                    <div class="media-card">
+                        <img src="1_robot_desarmado.jpeg" alt="Despiece del robot WALLE">
+                        <p class="media-caption">Vista del chasis y despiece de componentes internos</p>
+                    </div>
+
+                    <!-- Desarmado 2 -->
+                    <div class="media-card">
+                        <img src="2_robot_desarmado.jpeg" alt="Estructura interna WALLE">
+                        <p class="media-caption">Distribución electrónica y ensamble mecánico</p>
+                    </div>
+
+                    <!-- Video: Transportar funda 1 -->
+                    <div class="media-card">
+                        <video controls preload="metadata">
+                            <source src="1_transportar_funda.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                        <p class="media-caption">Prueba de recolección y transporte de fundas plásticas</p>
+                    </div>
+
+                    <!-- Video: Transportar funda 2 -->
+                    <div class="media-card">
+                        <video controls preload="metadata">
+                            <source src="2_transportar_funda.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                        <p class="media-caption">Manipulación de objetos con brazos articulados</p>
+                    </div>
+
+                    <!-- Video: Evasión de obstáculos -->
+                    <div class="media-card">
+                        <video controls preload="metadata">
+                            <source src="evasion_obstaculos.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                        <p class="media-caption">Funcionamiento del sensor infrarrojo en evasión de obstáculos</p>
+                    </div>
+
+                    <!-- Video: Storytime -->
+                    <div class="media-card">
+                        <video controls preload="metadata">
+                            <source src="storytime.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                        <p class="media-caption">Demostración general del proyecto y características</p>
+                    </div>
+
+                </div>
+
+                <!-- Descripción detallada de ingeniería -->
+                <div class="project-specs">
+                    <h3>Arquitectura y Especificaciones Técnicas</h3>
+                    <ul>
+                        <li><strong>Diseño Mecánico y CAD:</strong> Modelado 3D personalizado enfocado en la silueta icónica de WALLE. Incluye chasis, carcasa y dos brazos móviles articulados impresos en 3D que permiten al robot sujetar y levantar objetos de forma eficiente.</li>
+                        <li><strong>Tracción y Electrónica:</strong> Base móvil diferencial impulsada por 4 motores de corriente continua. Integración de un microcontrolador ESP32 encargado del control de movimiento y adquisición de datos.</li>
+                        <li><strong>Sistema Sensorial (Ojos de WALLE):</strong> En uno de sus ojos integra la cámara ESP32 para transmisión de video; en el otro, un sensor infrarrojo dedicado a la detección y evasión autónoma de obstáculos.</li>
+                        <li><strong>Visión Artificial y Clasificación:</strong> Procesamiento de imágenes mediante Python y OpenCV implementando clasificadores **Haar Cascade**, permitiendo identificar y clasificar diferentes tipos de materiales y residuos (vidrio, mascarillas o material quirúrgico, plásticos/fundas y madera).</li>
+                        <li><strong>Comunicación Inalámbrica:</strong> Conectividad en tiempo real mediante el protocolo **MQTT** para entrelazar el microcontrolador a bordo con el procesamiento centralizado en la computadora.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 RayRob · Asesoría de Proyectos de Robótica</p>
+    </footer>
+
+</body>
+</html>

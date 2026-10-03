@@ -1,14 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="multimedia/icon.png">
+    <title>RayRob | Proyectos y Desarrollos de Robótica</title>
+    <meta name="description" content="Explora nuestros proyectos universitarios, sistemas multi-robot con ROS 2, diseño 3D y prototipos de automatización.">
 
-    <head>
-        <title>RayRob</title>
-    </head>
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://raynelvas.github.io/rayrob/projects.html">
+    <meta property="og:title" content="RayRob | Proyectos de Robótica">
+    <meta property="og:description" content="Conoce los proyectos de robótica móvil, ROS 2 y diseño mecánico desarrollados por RayRob.">
+    <meta property="og:image" content="multimedia/preview.png">
 
-    <body>
-        <h1>RayRob</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        <a href="https://www.youtube.com/watch?v=ELSm-G201Ls&list=PLE8uP447fYpis_9iiaT1GrdOLmg85pAJB">link</a>
+    <header class="site-header">
+        <div class="brand">
+            <img src="multimedia/logo.png" alt="Logo RayRob" class="brand-logo">
+            <span class="brand-name">Ray<span class="highlight">Rob</span></span>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="projects.html" class="active">Proyectos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </body>
+    <main>
+        <!-- Page Header -->
+        <section class="projects-hero">
+            <h1>Proyectos Desarrollados</h1>
+            <p>Una muestra de nuestros trabajos en robótica móvil, sistemas multi-robot con ROS 2, modelado 3D y automatización.</p>
+        </section>
+
+        <!-- Projects Grid Container -->
+        <section class="projects-section">
+            <div class="projects-container">
+
+                <!-- Proyecto 1 -->
+                <article class="project-card">
+                    <div class="project-media">
+                        <!-- Reemplaza el src con la ruta de tu foto o video del case -->
+                        <img src="multiplikid/multiplikid.jpeg" alt="Case 3D para Pantalla Nexus Infantil">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Diseño 3D & Modelado Orgánico</span>
+                        <h2><a href="multiplikid/multiplikid.html" style="color: inherit; text-decoration: none;">Case Ergonómico Infantil para Pantalla Nexus</a></h2>
+                        <p>Diseño y prototipado 3D de un estuche protector especializado para una pantalla Nexus con powerbank integrado, orientado a niños. Destaca por huir de las formas geométricas tradicionales, adoptando una silueta inspirada en la cara de un animal con patas de soporte estables para convertirlo en una tablet interactiva segura.</p>
+                        
+                        <div class="project-techs">
+                            <span>Autodesk Fusion / Inventor</span>
+                            <span>Impresión 3D</span>
+                            <span>Diseño Orgánico</span>
+                        </div>
+
+                        <!-- ENLACE / BOTÓN AGREGADO AQUÍ -->
+                        <div class="project-action" style="margin-top: 1.5rem;">
+                            <a href="multiplikid/multiplikid.html" class="btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Ver galería y videos</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 2 -->
+                <article class="project-card">
+                    <div class="project-media">
+                        <!-- Reemplaza el src con tu imagen, ej: multimedia/robots.jpeg -->
+                        <img src="multirobot/robots_multiple.jpeg" alt="Sistema Multi-robot con ROS 2">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Sistemas Autónomos & ROS 2</span>
+                        <h2><a href="multirobot/multirobot.html" style="color: inherit; text-decoration: none;">Sistema Coordinado Multi-Robot (ROS 2 & ESP32)</a></h2>
+                        <p>Desarrollo integral de control para múltiples robots compuesto por 2 unidades móviles diferenciales y 2 brazos robóticos cilíndricos de 3 grados de libertad con electroimán. El sistema integra comunicación en tiempo real mediante <strong>micro-ROS</strong> en 4 microcontroladores ESP32, localización cenital por visión artificial con <strong>AprilTags</strong>, interfaz gráfica en Python y árboles de comportamiento (Behavior Trees).</p>
+                        
+                        <div class="project-techs">
+                            <span>ROS 2 Humble</span>
+                            <span>Python / OpenCV</span>
+                            <span>Micro-ROS / ESP32</span>
+                            <span>RViz</span>
+                        </div>
+
+                        <!-- ENLACE / BOTÓN AGREGADO AQUÍ -->
+                        <div class="project-action" style="margin-top: 1.5rem;">
+                            <a href="multirobot/multirobot.html" class="btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Ver galería y videos</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Proyecto 3: Robot WALLE -->
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="walle/1_robot.jpeg" alt="Robot WALLE recolector y clasificador de residuos">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Robótica Móvil & Visión Artificial</span>
+                        <h2><a href="walle/walle.html" style="color: inherit; text-decoration: none;">Robot WALLE Recolector y Clasificador de Residuos</a></h2>
+                        <p>Desarrollo mecatrónico integral inspirado en el personaje WALLE, diseñado para la recolección autónoma y clasificación de residuos mediante visión artificial (Haar Cascade). Cuenta con tracción diferencial de 4 motores, brazos articulados para agarre, evasión de obstáculos por infrarrojos y comunicación inalámbrica vía MQTT entre ESP32 y una estación base en Python.</p>
+                        
+                        <div class="project-techs">
+                            <span>Arduino / C++</span>
+                            <span>Python / OpenCV</span>
+                            <span>MQTT / ESP32</span>
+                            <span>Diseño CAD / 3D</span>
+                        </div>
+
+                        <div class="project-action" style="margin-top: 1.5rem;">
+                            <a href="walle/walle.html" class="btn-primary" style="padding: 0.6rem 1.25rem; font-size: 0.9rem;">Ver galería y videos</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PLANTILLA PARA FUTUROS PROYECTOS (Solo copia y pega este bloque cambiando los datos) -->
+                <!--
+                <article class="project-card">
+                    <div class="project-media">
+                        <img src="multimedia/imagen-futura.jpg" alt="Nombre del proyecto">
+                    </div>
+                    <div class="project-content">
+                        <span class="project-tag">Categoría</span>
+                        <h2>Título del Nuevo Proyecto</h2>
+                        <p>Breve descripción de las características técnicas, tecnologías utilizadas y el objetivo del proyecto universitario.</p>
+                        <div class="project-techs">
+                            <span>Tecnología 1</span>
+                            <span>Tecnología 2</span>
+                        </div>
+                    </div>
+                </article>
+                -->
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 RayRob · Asesoría de Proyectos de Robótica</p>
+    </footer>
+
+</body>
 </html>
